@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoP2 Banco</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    
+    <div id="tela-login" class="screen active">
+
+        <div class="container">
+
+            <img src="img/logo.png" class="logo" alt="logo">
+            <img src="img/user.png" class="user" alt="user">
+
+            <input type="text" placeholder="CADASTRO" class="input">
+            <input type="password" placeholder="SENHA" class="input">
+
+            <a href="#" class="forgot">Esqueceu sua senha?</a>
+
+            <button class="btn" id="entrarBtn">ENTRAR</button>
+
+        </div>
+
+    </div>
+
+
+    
+    <div id="tela-menu" class="screen">
+
+        <div class="menu-container">
+
+            
+            <div class="menu-logo">
+                <img src="img/logo.png" alt="Logo do Banco">
+            </div>
+
+            
+            <div class="grid-menu">
+
+                <div class="item">
+                    <img src="img/pix.png" alt="PIX">
+                    
+                </div>
+
+                <div class="item">
+                    <img src="img/extrato.png" alt="Extrato">
+                    
+                </div>
+
+                <div class="item">
+                    <img src="img/pagamentos.png" alt="Pagamentos">
+                    
+                </div>
+
+                <div class="item">
+                    <img src="img/cartoes.png" alt="Cartões">
+                    
+                </div>
+
+                <div class="item">
+                    <img src="img/investimentos.png" alt="Investimentos">
+                    
+                </div>
+
+                <div class="item">
+                    <img src="img/openfinance.png" alt="Open Finance">
+                    
+                </div>
+
+            </div>
+
+            <button class="ajuda-btn">PRECISA DE AJUDA?</button>
+
+        </div>
+
+    </div>
+
+<script>
+    
+    const entrarBtn = document.getElementById("entrarBtn");
+    const telaLogin = document.getElementById("tela-login");
+    const telaMenu = document.getElementById("tela-menu");
+
+    entrarBtn.addEventListener("click", () => {
+        telaLogin.classList.remove("active");
+        telaMenu.classList.add("active");
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.screen {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #8EE167, #C8E96C);
+}
+
+.screen.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 70px;
+}
+
+.user {
+    width: 140px;
+    margin-bottom: 25px;
+}
+
+.input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.forgot {
+    margin: 5px 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.menu-container {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-logo img {
+    width: 175px;
+    margin-top: -50px;
+}
+
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    justify-items: center;
+    margin-top: 70px;
+}
+
+.item img {
+    width: 120px;
+}
+
+
+
+
+.ajuda-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    background: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
